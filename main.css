@@ -1,0 +1,11 @@
+.recaptcha-container #recaptcha {
+    display: none;
+}
+
+.recaptcha-container #robot-puzzle {
+    display: none;
+}
+
+.recaptcha-container #recaptcha-text {
+    display: none;
+}

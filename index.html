@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Recaptcha</title>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+</head>
+
+<body>
+<div class="recaptcha-container">
+    Are you a robot?
+    <div id="robot-select">
+        <input type="checkbox" id="robot-yes" name="robot-yes" onClick="countdowntimer(); hideThis('robot-select'); showThis('robot-puzzle');">
+        <label for="robot-yes">Yes</label>
+
+        <input type="checkbox" id="robot-no" name="robot-no" onClick="hideThis('robot-select'); showThis('recaptcha', 'recaptcha-text');">
+        <label for="robot-no">No</label>
+    </div>
+
+    <div id="robot-puzzle">
+        <div id="countdowntimer">
+        </div>
+
+        <div id="puzzle-container">
+            <div id="puzzle">
+            </div>
+
+            <div id="puzzle-answer">
+                Answer:
+                <input type="textbox" id="puzzle-input" name="puzzle-input">
+            </div>
+        </div>
+    </div>
+
+    <div id="recaptcha">
+        <p id="recaptcha-text">Prove it:</p>
+        <!-- recaptcha code goes here -->
+        Recaptcha
+    </div>
+</div>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
